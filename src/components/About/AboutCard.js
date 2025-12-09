@@ -15,8 +15,8 @@ function AboutCard() {
             <span className="purple">BTS SIO</span> à{" "}
             <span className="purple">Avranches </span>.
             <br />Je suis titulaire du baccalauréat (BAC) {" "}
-            <span className="purple">Systeme Numerique</span> {" "}
-            <span className="purple">BIT Mesra</span>.
+            <span className="purple">Systeme Numerique.</span> {" "}
+
             <br />
             <br />
             En dehors du Dev et du Réseau, J'adore participer à des activités qui me permettent de rester active:
