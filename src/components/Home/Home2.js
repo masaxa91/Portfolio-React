@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
+import marius_avatar from "../../Assets/marius_avatar.svg";
 
 function Home2() {
   return (
@@ -13,10 +14,10 @@ function Home2() {
               PERMETTEZ MOI <span className="purple"> DE </span> M'INTRODUIRE
             </h1>
             <p className="home-about-body">
-              I’m a Software Engineer who loves transforming ideas into
-              reliable, scalable products. Over time, I’ve explored several
-              technologies and found my passion in building high-performance
-              systems and intuitive user experiences.
+              Je suis un étudiant en informatique et réseau qui aime transformer des idées en projets 
+              fiables et qui fonctionnent bien. Avec le temps, j’ai appris à utiliser différentes 
+              technologies et j’ai découvert que ce qui me passionne le plus, c’est de créer des 
+              systèmes performants et des applications faciles à utiliser.
               <br />
               <br />
               I’m proficient in
@@ -49,7 +50,7 @@ function Home2() {
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img src={marius_avatar} className="img-fluid" alt="avatar" />
             </Tilt>
           </Col>
         </Row>

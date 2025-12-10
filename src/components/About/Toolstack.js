@@ -1,30 +1,35 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import macOs from "../../Assets/TechIcons/Apple MacOSX.svg";
 import chrome from "../../Assets/TechIcons/Google Chrome.svg";
 import vsCode from "../../Assets/TechIcons/vscode.svg";
-import intelliJ from "../../Assets/TechIcons/intellij-idea.svg";
+import proxmox from "../../Assets/TechIcons/proxmox.svg";
 
 function Toolstack() {
+
+  const tools = [
+    { icon: chrome, name: "Google Chrome", level: 5 },
+    { icon: vsCode, name: "Vs Code", level: 5 },
+    { icon: proxmox, name: "Proxmox", level: 3 },
+  ];
+
+  const renderStars = (level) => {
+    return "★★★★★".slice(0, level) + "☆☆☆☆☆".slice(0, 5 - level);
+  };
+
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={macOs} alt="macOs" className="tech-icon-images" />
-        <div className="tech-icons-text">Mac Os</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons ">
-        <img src={chrome} alt="Chrome" className="tech-icon-images" />
-        <div className="tech-icons-text">Google Chrome</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons ">
-        <img src={vsCode} alt="vsCode" className="tech-icon-images" />
-        <div className="tech-icons-text">Vs Code</div>
-      </Col>
+      {tools.map((tool, index) => (
+        <Col xs={4} md={2} key={index} className="tech-icons">
+          <img src={tool.icon} alt={tool.name} className="tech-icon-images" />
 
-      <Col xs={4} md={2} className="tech-icons ">
-        <img src={intelliJ} alt="go" className="tech-icon-images" />
-        <div className="tech-icons-text">IntelliJ</div>
-      </Col>
+          <div className="tech-icons-text">{tool.name}</div>
+
+          {/* Étoiles */}
+          <div style={{ color: "#d06cff", fontSize: "14px", marginTop: "5px" }}>
+            {renderStars(tool.level)}
+          </div>
+        </Col>
+      ))}
     </Row>
   );
 }

@@ -1,71 +1,50 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { SiNextdotjs, SiSolidity } from "react-icons/si";
-import { FaRust } from "react-icons/fa";
-import Go from "../../Assets/TechIcons/go.svg";
-import C from "../../Assets/TechIcons/C++.svg";
-import Javascript from "../../Assets/TechIcons/Javascript.svg";
-import Node from "../../Assets/TechIcons/Node.svg";
-import ReactIcon from "../../Assets/TechIcons/React.svg";
-import HaskellIcon from "../../Assets/TechIcons/Haskell.svg";
-import Java from "../../Assets/TechIcons/Java.svg";
-import Python from "../../Assets/TechIcons/Python.svg";
-import Typescript from "../../Assets/TechIcons/Typescript.svg";
-import Git from "../../Assets/TechIcons/Git.svg";
-import Firebase from "../../Assets/TechIcons/Firebase.svg";
-import Redis from "../../Assets/TechIcons/Redis.svg";
-import Docker from "../../Assets/TechIcons/Docker.svg";
-import Mongo from "../../Assets/TechIcons/Mongo.svg";
-import SQL from "../../Assets/TechIcons/SQL.svg";
-import Kubernates from "../../Assets/TechIcons/Kubernates.svg";
-import Redux from "../../Assets/TechIcons/Redux.svg";
-import Tailwind from "../../Assets/TechIcons/Tailwind.svg";
-import MUI from "../../Assets/TechIcons/MUI.svg";
-import Postman from "../../Assets/TechIcons/Postman.svg";
-import AWS from "../../Assets/TechIcons/AWS.svg";
-import Kafka from "../../Assets/TechIcons/Kafka.svg";
+import { SiNextdotjs } from "react-icons/si";
+
 import csharp from "../../Assets/TechIcons/csharp.svg";
+import Javascript from "../../Assets/TechIcons/Javascript.svg";
+import Typescript from "../../Assets/TechIcons/Typescript.svg";
+import ReactIcon from "../../Assets/TechIcons/React.svg";
+import SQL from "../../Assets/TechIcons/SQL.svg";
+import Python from "../../Assets/TechIcons/Python.svg";
+import html from "../../Assets/TechIcons/html.svg";
+import PHP from "../../Assets/TechIcons/php.svg";
+import css from "../../Assets/TechIcons/css.svg";
 
 function Techstack() {
+
+  const skills = [
+    { icon: csharp, name: "Csharp", level: 3 },
+    { icon: Javascript, name: "Javascript", level: 2 },
+    { icon: Typescript, name: "Typescript", level: 2 },
+    { icon: ReactIcon, name: "React.js", level: 3 },
+    { icon: <SiNextdotjs fontSize="24px" />, name: "Next.js", level: 2, isComponent: true },
+    { icon: SQL, name: "Postgresql", level: 4 },
+    { icon: Python, name: "Python", level: 2 },
+    { icon: html, name: "HTML", level: 4 },
+    { icon: PHP, name: "PHP", level: 3 },
+    { icon: css, name: "CSS", level: 5 },
+  ];
+
+  const renderStars = (level) => {
+    return "★★★★★".slice(0, level) + "☆☆☆☆☆".slice(0, 5 - level);
+  };
+
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={csharp} alt="csharp" />
-        <div className="tech-icons-text">Csharp</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Javascript} alt="javascript" />
-        <div className="tech-icons-text">Javascript</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Typescript} alt="typescript" />
-        <div className="tech-icons-text">Javascript</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={ReactIcon} alt="react" />
-        <div className="tech-icons-text">React.Js</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs fontSize={"24px"} />
-        <div className="tech-icons-text">Next.js</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Git} alt="git" />
-        <div className="tech-icons-text">Git</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={SQL} alt="SQL" />
-        <div className="tech-icons-text">Postgresql</div>
-      </Col>
+      {skills.map((skill, index) => (
+        <Col xs={4} md={2} key={index} className="tech-icons">
+          {skill.isComponent ? skill.icon : <img src={skill.icon} alt={skill.name} />}
+          <div className="tech-icons-text">{skill.name}</div>
 
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Python} alt="Python" />
-        <div className="tech-icons-text">Python</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Java} alt="haskell" />
-        <div className="tech-icons-text">Java</div>
-      </Col>
+          {/* Étoiles */}
+          <div style={{ color: "#d06cff", fontSize: "14px", marginTop: "5px" }}>
+            {renderStars(skill.level)}
+          </div>
+
+        </Col>
+      ))}
     </Row>
   );
 }
