@@ -759,6 +759,7 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+<<<<<<< HEAD
 /* Alignement de la liste complète */
 .home-about-social-links {
   display: flex;
@@ -791,3 +792,5 @@ button:focus {
   font-size: 16px;
   font-weight: 500;
 }
+=======
+>>>>>>> 71deaf2ce105430636bdbdc59a7e4b0a478fae8b

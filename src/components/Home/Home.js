@@ -50,15 +50,24 @@ function Home() {
           </Row>
         </Container>
       </Container>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 71deaf2ce105430636bdbdc59a7e4b0a478fae8b
       <Home2 />
 
       <Container>
         <Row style={{ paddingTop: "50px", paddingBottom: "80px" }}>
           <Col md={12} className="home-about-social">
+<<<<<<< HEAD
             <h1>Trouvez-moi sur</h1>
             <p>
               Restez <span className="purple">connecté</span> avec moi
+=======
+            <h1>Trouvez moi sur</h1>
+            <p>
+              Restez <span className="purple">connecter </span>avec moi
+>>>>>>> 71deaf2ce105430636bdbdc59a7e4b0a478fae8b
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
@@ -66,11 +75,16 @@ function Home() {
                   href="https://github.com/masaxa91"
                   target="_blank"
                   rel="noreferrer"
+<<<<<<< HEAD
                   className="icon-colour home-social-icons"
+=======
+                  className="icon-colour  home-social-icons"
+>>>>>>> 71deaf2ce105430636bdbdc59a7e4b0a478fae8b
                 >
                   <AiFillGithub />
                 </a>
               </li>
+<<<<<<< HEAD
 
               <li className="social-icons">
                 <a
@@ -78,11 +92,32 @@ function Home() {
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
+=======
+              <li className="social-icons">
+                <a
+                  href="https://twitter.com/Soumyajit4419"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+>>>>>>> 71deaf2ce105430636bdbdc59a7e4b0a478fae8b
                 >
                   <AiOutlineTwitter />
                 </a>
               </li>
+<<<<<<< HEAD
 
+=======
+              <li className="social-icons">
+                <a
+                  href="https://www.instagram.com/soumyajit4419"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                  <AiFillInstagram />
+                </a>
+              </li>
+>>>>>>> 71deaf2ce105430636bdbdc59a7e4b0a478fae8b
               <li className="social-icons">
                 <a
                   href="mailto:atzenhoffermarius@gmail.com"
@@ -91,6 +126,7 @@ function Home() {
                   <IoIosMail />
                 </a>
               </li>
+<<<<<<< HEAD
 
               <li className="social-icons phone-item">
                 <a
@@ -104,6 +140,18 @@ function Home() {
                 </a>
               </li>
 
+=======
+              <li className="social-icons">
+                <a
+                  href="mailto:atzenhoffermarius@gmail.com"
+                  className="icon-colour home-social-icons"
+                >
+                  <BsFillTelephoneFill />
+                </a>
+              </li>
+
+
+>>>>>>> 71deaf2ce105430636bdbdc59a7e4b0a478fae8b
             </ul>
           </Col>
         </Row>

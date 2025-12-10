@@ -21,7 +21,11 @@ function Home2() {
               <br />
               <br />
 
+<<<<<<< HEAD
               et j’aime travailler aussi bien sur le réseau que sur les opérations informatiques en générales.
+=======
+              et j’aime travailler aussi bien sur le réseau que sur les opérations informatiques générales.
+>>>>>>> 71deaf2ce105430636bdbdc59a7e4b0a478fae8b
               <br />
               <br />
               My key areas of interest include developing
