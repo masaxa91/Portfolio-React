@@ -11,6 +11,8 @@ import Python from "../../Assets/TechIcons/Python.svg";
 import html from "../../Assets/TechIcons/html.svg";
 import PHP from "../../Assets/TechIcons/php.svg";
 import css from "../../Assets/TechIcons/css.svg";
+import linux from "../../Assets/TechIcons/linux.svg";
+
 
 function Techstack() {
 
@@ -25,6 +27,7 @@ function Techstack() {
     { icon: html, name: "HTML", level: 4 },
     { icon: PHP, name: "PHP", level: 3 },
     { icon: css, name: "CSS", level: 5 },
+    { icon: linux, name: "LINUX", level: 3 },
   ];
 
   const renderStars = (level) => {

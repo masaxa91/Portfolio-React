@@ -12,6 +12,8 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { IoIosMail } from "react-icons/io";
+import { BsFillTelephoneFill } from "react-icons/bs";
 
 function Home() {
   return (
@@ -29,7 +31,7 @@ function Home() {
               </h1>
 
               <h1 className="heading-name">
-              JE SUIS <strong className="main-name">ATZENHOFFER MARIUS</strong>
+                JE SUIS <strong className="main-name">ATZENHOFFER MARIUS</strong>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
@@ -88,6 +90,24 @@ function Home() {
                   <AiFillInstagram />
                 </a>
               </li>
+              <li className="social-icons">
+                <a
+                  href="mailto:atzenhoffermarius@gmail.com"
+                  className="icon-colour home-social-icons"
+                >
+                  <IoIosMail />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="mailto:atzenhoffermarius@gmail.com"
+                  className="icon-colour home-social-icons"
+                >
+                  <BsFillTelephoneFill />
+                </a>
+              </li>
+
+
             </ul>
           </Col>
         </Row>

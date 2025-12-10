@@ -14,20 +14,14 @@ function Home2() {
               PERMETTEZ MOI <span className="purple"> DE </span> M'INTRODUIRE
             </h1>
             <p className="home-about-body">
-              Je suis un étudiant en informatique et réseau qui aime transformer des idées en projets 
-              fiables et qui fonctionnent bien. Avec le temps, j’ai appris à utiliser différentes 
-              technologies et j’ai découvert que ce qui me passionne le plus, c’est de créer des 
-              systèmes performants et des applications faciles à utiliser.
+              En tant qu'étudiant en informatique et réseau, j'apprécie la transformation 
+              d'idées en projets solides et performants. Au fil du temps, j'ai acquis des 
+              compétences dans diverses technologies et j'ai réalisé que ma véritable passion 
+              réside dans le réseau et l'informatique.
               <br />
               <br />
-              I’m proficient in
-              <i>
-                <b className="purple">
-                  {" "}
-                  JavaScript, C++, Rust, Node.js, and Java{" "}
-                </b>
-              </i>
-              — and I enjoy working across both backend and frontend stacks.
+
+              et j’aime travailler aussi bien sur le réseau que sur les opérations informatiques générales.
               <br />
               <br />
               My key areas of interest include developing
